@@ -2,6 +2,7 @@ import nuxtPkg from 'nuxt/package.json'
 
 export default defineNuxtConfig({
   extends: ['@nuxt/ui-pro'],
+
   modules: [
     '@nuxt/content',
     '@nuxt/eslint',
@@ -12,35 +13,44 @@ export default defineNuxtConfig({
     '@nuxtjs/plausible',
     'nuxt-time'
   ],
+
   future: {
     compatibilityVersion: 4
   },
+
   ui: {
     icons: ['heroicons', 'simple-icons', 'mdi', 'logos', 'game-icons', 'arcticons', 'uil']
   },
+
   colorMode: {
     preference: 'dark'
   },
+
   runtimeConfig: {
     public: {
       nuxtVersion: nuxtPkg.version
     }
   },
+
   devtools: {
     enabled: true
   },
+
   typescript: {
     strict: true
   },
+
   image: {
     provider: 'twicpics',
     twicpics: {
       baseURL: 'https://vernaillen.twic.pics/links'
     }
   },
+
   plausible: {
     apiHost: 'https://links.vernaillen.dev/plio'
   },
+
   eslint: {
     config: {
       stylistic: {
@@ -52,5 +62,7 @@ export default defineNuxtConfig({
       lintOnStart: true,
       fix: true
     }
-  }
+  },
+
+  compatibilityDate: '2024-07-18'
 })
