@@ -29,5 +29,8 @@
     "unlighthouse": "^0.13.2",
     "vite-plugin-eslint2": "^4.4.0",
     "vue-tsc": "^2.0.26"
+  },
+  "engines": {
+    "pnpm": "^9.4.0"
   }
 }
