@@ -23,9 +23,9 @@ linktree:
       icon: i-mdi-mastodon
   links:
     - label: New releases page
-      content: You can now find my recent GitHub releases on my website
-      url: https://vernaillen.dev/releases
-      urlDisplay: vernaillen.dev/releases
+      content: You can now find my recent GitHub releases and contributions on my website
+      url: https://vernaillen.dev/releases-prs
+      urlDisplay: vernaillen.dev/releases-prs
       image: /images/vernaillendev.png
       imageAlt: Vernaillen.dev logo
     - label: WPNuxt
