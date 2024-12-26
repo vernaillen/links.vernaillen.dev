@@ -36,6 +36,11 @@
     "vite-plugin-eslint2": "^5.0.3",
     "vue-tsc": "^2.2.0"
   },
+  "pnpm": {
+    "overrides": {
+      "vite": "5.4.11"
+    }
+  },
   "engines": {
     "pnpm": "^9.15.1"
   }
