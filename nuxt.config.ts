@@ -14,16 +14,16 @@ export default defineNuxtConfig({
     'nuxt-time'
   ],
 
-  future: {
-    compatibilityVersion: 4
-  },
-
-  ui: {
-    icons: ['heroicons', 'simple-icons', 'mdi', 'logos', 'game-icons', 'arcticons', 'uil']
+  devtools: {
+    enabled: true
   },
 
   colorMode: {
     preference: 'dark'
+  },
+
+  ui: {
+    icons: ['heroicons', 'simple-icons', 'mdi', 'logos', 'game-icons', 'arcticons', 'uil']
   },
 
   runtimeConfig: {
@@ -32,23 +32,14 @@ export default defineNuxtConfig({
     }
   },
 
-  devtools: {
-    enabled: true
+  future: {
+    compatibilityVersion: 4
   },
+
+  compatibilityDate: '2024-07-18',
 
   typescript: {
     strict: true
-  },
-
-  image: {
-    provider: 'twicpics',
-    twicpics: {
-      baseURL: 'https://vernaillen.twic.pics/links'
-    }
-  },
-
-  plausible: {
-    apiHost: 'https://links.vernaillen.dev/plio'
   },
 
   eslint: {
@@ -64,5 +55,14 @@ export default defineNuxtConfig({
     }
   },
 
-  compatibilityDate: '2024-07-18'
+  image: {
+    provider: 'twicpics',
+    twicpics: {
+      baseURL: 'https://vernaillen.twic.pics/links'
+    }
+  },
+
+  plausible: {
+    apiHost: 'https://links.vernaillen.dev/plio'
+  }
 })
