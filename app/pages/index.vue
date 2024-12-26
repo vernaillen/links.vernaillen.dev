@@ -18,7 +18,7 @@ definePageMeta({
   <ULandingSection
     v-if="page"
     :description="page.linktree.description"
-    class="slide-enter-content"
+    class="slide-enter-content max-w-xl mx-auto"
   >
     <template #title>
       wouter <span class="text-primary-500 font-semibold">on the</span> net
