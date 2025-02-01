@@ -24,7 +24,7 @@ definePageMeta({
       <div class="flex justify-center">
         <Motion
           as="div"
-          :initial="{ x: -40 }"
+          :initial="{ x: -25 }"
           :animate="{ x: 0 }"
           :transition="{ duration: 1, ease: 'easeInOut' }"
         >
@@ -32,8 +32,8 @@ definePageMeta({
         </Motion>
         <Motion
           as="div"
-          :initial="{ scale: 1.5 }"
-          :animate="{ scale: 1 }"
+          :initial="{ scale: 1.4, y: -4 }"
+          :animate="{ scale: 1, y: 0 }"
           :transition="{ duration: 1, ease: 'easeInOut' }"
           class="text-primary-500 font-semibold mx-1"
         >
@@ -41,7 +41,7 @@ definePageMeta({
         </Motion>
         <Motion
           as="div"
-          :initial="{ x: 40 }"
+          :initial="{ x: 25 }"
           :animate="{ x: 0 }"
           :transition="{ duration: 1, ease: 'easeInOut' }"
         >
