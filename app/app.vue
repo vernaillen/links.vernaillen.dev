@@ -32,7 +32,7 @@ if (import.meta.client) {
     && hostname !== 'localhost'
     && hostname !== '127.0.0.1'
     && !hostname.startsWith('10.0.2.')
-    && !hostname.includes('netlify.app')
+    && !hostname.includes('vercel.app')
   ) { window.location.href = 'https://links.vernaillen.dev' }
 }
 </script>
