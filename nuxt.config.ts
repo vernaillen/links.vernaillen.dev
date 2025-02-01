@@ -9,7 +9,6 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/fonts',
     '@nuxt/image',
-    '@nuxthq/studio',
     '@nuxtjs/plausible',
     'nuxt-time'
   ],
@@ -22,10 +21,6 @@ export default defineNuxtConfig({
     preference: 'dark'
   },
 
-  ui: {
-    icons: ['heroicons', 'simple-icons', 'mdi', 'logos', 'game-icons', 'arcticons', 'uil']
-  },
-
   runtimeConfig: {
     public: {
       nuxtVersion: nuxtPkg.version
@@ -36,7 +31,7 @@ export default defineNuxtConfig({
     compatibilityVersion: 4
   },
 
-  compatibilityDate: '2024-07-18',
+  compatibilityDate: '2025-02-01',
 
   typescript: {
     strict: true

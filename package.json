@@ -28,7 +28,6 @@
     "@iconify-json/simple-icons": "^1.2.22",
     "@iconify-json/uil": "^1.2.3",
     "@nuxt/eslint": "^1.0.0",
-    "@nuxthq/studio": "^2.2.1",
     "@nuxtjs/plausible": "^1.2.0",
     "eslint": "^9.19.0",
     "nuxt-time": "^1.0.3",
