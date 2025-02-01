@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/ui-pro',
     '@nuxtjs/plausible',
+    'motion-v/nuxt',
     'nuxt-time'
   ],
 

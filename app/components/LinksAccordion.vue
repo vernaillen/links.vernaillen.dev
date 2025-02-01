@@ -5,16 +5,22 @@ defineProps<{
   links: AccordionItem[]
 }>()
 
+const active = ref('0')
+const content = ref(null)
+
 onMounted(() => {
-  const elements = document.querySelectorAll('[data-state="closed"]')
+  const elements = document.querySelectorAll('[data-state]')
   elements.forEach((element, index) => {
-    animate(element, { opacity: 1, scale: 1 }, { delay: index * 0.01 })
+    animate(element, { opacity: 1, scale: 1 }, { delay: index * 0.03 })
   })
 })
 </script>
 
 <template>
-  <UAccordion :items="links">
+  <UAccordion
+    v-model="active"
+    :items="links"
+  >
     <template #leading="{ item }">
       <UIcon
         v-if="item.icon"
@@ -33,14 +39,14 @@ onMounted(() => {
         :class="item.imageClass"
       />
     </template>
-    <template #content="{ item, index }">
+    <template #content="{ item }">
       <div
+        ref="content"
         class="overflow-hidden z-40
           shadow-sm rounded-md
           bg-white bg-opacity-70 dark:bg-gray-800
           prose dark:prose-invert
-          text-center slide-enter "
-        :style="'--enter-stage: ' + index"
+          text-center "
       >
         <div class="overflow-hidden px-2 pt-5 pb-3 text-sm text-dark dark:text-gray-200">
           <component

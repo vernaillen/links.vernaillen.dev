@@ -17,7 +17,7 @@ export default defineAppConfig({
     },
     accordion: {
       slots: {
-        item: 'rounded-lg mt-2 slide-enter z-10 opacity-0 scale-80',
+        item: 'rounded-lg mt-2 z-10 opacity-0 scale-80',
         header: 'rounded-lg px-4 text-gray-700 dark:text-gray-200 bg-white hover:bg-primary-300 hover:bg-opacity-40 disabled:bg-gray-50 dark:bg-gray-700 dark:hover:bg-primary-900 dark:disabled:bg-gray-600',
         trigger: 'cursor-pointer items-center flex justify-center'
       }

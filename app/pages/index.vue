@@ -21,7 +21,33 @@ definePageMeta({
     class="max-w-xl mx-auto"
   >
     <template #title>
-      wouter <span class="text-primary-500 font-semibold">on the</span> net
+      <div class="flex justify-center">
+        <Motion
+          as="div"
+          :initial="{ x: -40 }"
+          :animate="{ x: 0 }"
+          :transition="{ duration: 1, ease: 'easeInOut' }"
+        >
+          wouter
+        </Motion>
+        <Motion
+          as="div"
+          :initial="{ scale: 1.5 }"
+          :animate="{ scale: 1 }"
+          :transition="{ duration: 1, ease: 'easeInOut' }"
+          class="text-primary-500 font-semibold mx-1"
+        >
+          on the
+        </Motion>
+        <Motion
+          as="div"
+          :initial="{ x: 40 }"
+          :animate="{ x: 0 }"
+          :transition="{ duration: 1, ease: 'easeInOut' }"
+        >
+          net
+        </Motion>
+      </div>
     </template>
     <template #description>
       <UButton
@@ -37,8 +63,15 @@ definePageMeta({
       />
       <div class="text-sm mt-5">
         ecstatic dance dj & trancedance facilitator<br>
-        freelance full stack developer (java & nuxt)<br>
-        ... forever exploring & learning ...
+        freelance full stack developer (java & nuxt)
+        <Motion
+          as="div"
+          :initial="{ opacity: 0, scale: 0.9 }"
+          :animate="{ opacity: 1, scale: 1 }"
+          :transition="{ duration: 0.5, ease: 'easeInOut' }"
+        >
+          ... forever exploring & learning ...
+        </Motion>
       </div>
     </template>
     <LinksAccordion :links="page.links" />
