@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('index', () => queryContent('/').findOne())
+const { data: page } = await useAsyncData('index', () => queryCollection('pages').path('/').first())
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
@@ -17,7 +17,7 @@ definePageMeta({
 <template>
   <ULandingSection
     v-if="page"
-    :description="page.linktree.description"
+    :description="page.description"
     class="slide-enter-content max-w-xl mx-auto"
   >
     <template #title>
@@ -25,7 +25,7 @@ definePageMeta({
     </template>
     <template #description>
       <UButton
-        v-for="logo, index in page.linktree.logos"
+        v-for="logo, index in page.logos"
         :key="index"
         :icon="logo.icon"
         :to="logo.url"
@@ -41,7 +41,7 @@ definePageMeta({
         ... forever exploring & learning ...
       </div>
     </template>
-    <UAccordion :items="page.linktree.links">
+    <UAccordion :items="page.links">
       <template #default="{ item, open, index }">
         <div
           class="bg-white rounded-lg mt-2 slide-enter z-10"
