@@ -5,7 +5,7 @@ defineProps<{
   links: AccordionItem[]
 }>()
 
-const active = ref('0')
+const active = ref(null)
 const content = ref(null)
 
 onMounted(() => {
