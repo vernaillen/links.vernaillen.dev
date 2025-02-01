@@ -11,6 +11,8 @@ export default defineNuxtConfig({
     'nuxt-time'
   ],
 
+  ssr: false,
+
   devtools: {
     enabled: true
   },

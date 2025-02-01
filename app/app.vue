@@ -38,7 +38,11 @@ if (import.meta.client) {
 </script>
 
 <template>
-  <AppHeader />
-  <NuxtPage />
-  <AppFooter />
+  <UPage>
+    <AppHeader />
+    <UContainer>
+      <NuxtPage />
+    </UContainer>
+    <AppFooter />
+  </UPage>
 </template>

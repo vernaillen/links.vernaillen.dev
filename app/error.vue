@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import type { NuxtError } from '#app'
 
+const route = useRoute()
+
 defineProps({
   error: {
     type: Object as PropType<NuxtError>,
@@ -28,15 +30,24 @@ useSeoMeta({
 </script>
 
 <template>
-  <AppHeader />
-
-  <UMain>
+  <UPage>
+    <AppHeader />
     <UContainer>
-      <UPage>
-        <UPageError :error="error" />
-      </UPage>
+      <UAlert
+        title="Ooops, something went wrong"
+        :description="error.message"
+        variant="soft"
+        class="my-20"
+      />
+      <UButton
+        v-if="route.path !== '/'"
+        class="mb-20"
+        to="/"
+      >
+        <UIcon name="i-heroicons-arrow-left" />
+        Back to home
+      </UButton>
     </UContainer>
-  </UMain>
-
-  <AppFooter />
+    <AppFooter />
+  </UPage>
 </template>

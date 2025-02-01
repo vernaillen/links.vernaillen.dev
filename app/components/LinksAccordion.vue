@@ -6,7 +6,7 @@ defineProps<{
 
 <template>
   <UAccordion :items="links">
-    <template #leading="{ item, open, index }">
+    <template #leading="{ item }">
       <UIcon
         v-if="item.icon"
         :name="item.icon"
