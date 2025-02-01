@@ -3,7 +3,7 @@
     <template #left>
       &nbsp;
     </template>
-    <template #center>
+    <template #top>
       <div class="absolute top-0 left-0 right-0 mx-auto w-[100px]">
         <div
           aria-label="Homepage"

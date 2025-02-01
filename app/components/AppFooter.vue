@@ -11,7 +11,7 @@ const { data: commits } = useLazyAsyncData<CommitResponse[]>('commits', () =>
 
 <template>
   <UFooter>
-    <template #center>
+    <template #default>
       <div class="prose dark:prose-invert items-center text-center mx-auto">
         <div class="text-xs pt-3">
           <p class="text-sm">
@@ -24,9 +24,9 @@ const { data: commits } = useLazyAsyncData<CommitResponse[]>('commits', () =>
               target="_blank"
             >
               <UIcon
-                class="-mb-[2px] mx-1 w-4 h-3"
+                class="ml-1 mr-2 w-4 h-3"
                 name="i-logos-nuxt-icon"
-              /> Nuxt {{ config.public.nuxtVersion }}
+              />Nuxt {{ config.public.nuxtVersion }}
             </NuxtLink>
           </p>
           <p v-if="commits && commits[0]">

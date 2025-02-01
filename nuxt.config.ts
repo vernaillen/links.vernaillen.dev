@@ -1,14 +1,12 @@
 import nuxtPkg from 'nuxt/package.json'
 
 export default defineNuxtConfig({
-  extends: ['@nuxt/ui-pro'],
-
   modules: [
     '@nuxt/content',
     '@nuxt/eslint',
-    '@nuxt/ui',
     '@nuxt/fonts',
     '@nuxt/image',
+    '@nuxt/ui-pro',
     '@nuxtjs/plausible',
     'nuxt-time'
   ],
@@ -16,6 +14,8 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true
   },
+
+  css: ['~/assets/css/main.css'],
 
   colorMode: {
     preference: 'dark'

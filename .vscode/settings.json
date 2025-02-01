@@ -1,4 +1,8 @@
 {
-  "eslint.experimental.useFlatConfig": true,
-  "circleci.persistedProjectSelection": []
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  }
 }

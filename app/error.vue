@@ -39,6 +39,4 @@ useSeoMeta({
   </UMain>
 
   <AppFooter />
-
-  <UNotifications />
 </template>
