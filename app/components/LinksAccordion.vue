@@ -1,7 +1,16 @@
 <script setup lang="ts">
+import { animate } from 'motion/mini'
+
 defineProps<{
   links: AccordionItem[]
 }>()
+
+onMounted(() => {
+  const elements = document.querySelectorAll('[data-state="closed"]')
+  elements.forEach((element, index) => {
+    animate(element, { opacity: 1, scale: 1 }, { delay: index * 0.01 })
+  })
+})
 </script>
 
 <template>
