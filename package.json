@@ -17,8 +17,8 @@
     "@nuxt/fonts": "^0.10.3",
     "@nuxt/image": "^1.9.0",
     "@nuxt/ui-pro": "3.0.0-alpha.12",
-    "motion": "^12.0.6",
-    "motion-v": "^0.8.1",
+    "motion": "^12.3.0",
+    "motion-v": "^0.9.0",
     "nuxt": "3.15.4"
   },
   "devDependencies": {
@@ -28,7 +28,7 @@
     "@iconify-json/logos": "^1.2.4",
     "@iconify-json/lucide": "^1.2.25",
     "@iconify-json/mdi": "^1.2.3",
-    "@iconify-json/simple-icons": "^1.2.22",
+    "@iconify-json/simple-icons": "^1.2.23",
     "@iconify-json/uil": "^1.2.3",
     "@nuxt/eslint": "^1.0.0",
     "@nuxtjs/plausible": "^1.2.0",

@@ -21,11 +21,11 @@ importers:
         specifier: 3.0.0-alpha.12
         version: 3.0.0-alpha.12(@babel/parser@7.26.7)(axios@1.7.9)(change-case@5.4.4)(db0@0.2.3(@libsql/client@0.14.0)(better-sqlite3@11.8.1))(embla-carousel@8.5.2)(ioredis@5.4.2)(magicast@0.3.5)(radix-vue@1.9.13(vue@3.5.13(typescript@5.7.3)))(rollup@4.33.0)(typescript@5.7.3)(vite@6.0.11(@types/node@22.13.0)(jiti@2.4.2)(lightningcss@1.29.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.3))
       motion:
-        specifier: ^12.0.6
-        version: 12.0.6
+        specifier: ^12.3.0
+        version: 12.3.0
       motion-v:
-        specifier: ^0.8.1
-        version: 0.8.1(vue@3.5.13(typescript@5.7.3))
+        specifier: ^0.9.0
+        version: 0.9.0(vue@3.5.13(typescript@5.7.3))
       nuxt:
         specifier: 3.15.4
         version: 3.15.4(@libsql/client@0.14.0)(@parcel/watcher@2.5.1)(@types/node@22.13.0)(better-sqlite3@11.8.1)(db0@0.2.3(@libsql/client@0.14.0)(better-sqlite3@11.8.1))(eslint@9.19.0(jiti@2.4.2))(ioredis@5.4.2)(lightningcss@1.29.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.33.0)(terser@5.37.0)(tsx@4.19.2)(typescript@5.7.3)(vite@6.0.11(@types/node@22.13.0)(jiti@2.4.2)(lightningcss@1.29.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(vue-tsc@2.2.0(typescript@5.7.3))(yaml@2.7.0)
@@ -49,8 +49,8 @@ importers:
         specifier: ^1.2.3
         version: 1.2.3
       '@iconify-json/simple-icons':
-        specifier: ^1.2.22
-        version: 1.2.22
+        specifier: ^1.2.23
+        version: 1.2.23
       '@iconify-json/uil':
         specifier: ^1.2.3
         version: 1.2.3
@@ -686,8 +686,8 @@ packages:
   '@iconify-json/mdi@1.2.3':
     resolution: {integrity: sha512-O3cLwbDOK7NNDf2ihaQOH5F9JglnulNDFV7WprU2dSoZu3h3cWH//h74uQAB87brHmvFVxIOkuBX2sZSzYhScg==}
 
-  '@iconify-json/simple-icons@1.2.22':
-    resolution: {integrity: sha512-0UzThRMwHuOJfgpp+tyV/y2uEBLjFVrxC4igv9iWjSEQEBK4tNjWZNTRCBCYyv/FwWVYyKAsA8tZQ8vUYzvFnw==}
+  '@iconify-json/simple-icons@1.2.23':
+    resolution: {integrity: sha512-ySyZ0ZXdNveWnR71t7XGV7jhknxSlTtpM2TyIR1cUHTUzZLP36hYHTNqb2pYYsCzH5ed85KTTKz7vYT33FyNIQ==}
 
   '@iconify-json/uil@1.2.3':
     resolution: {integrity: sha512-if91+UBhDQc6glPsIaXecGIcXnbQZfEO4Gdv89TV2xQ+V5e9GWbY5rNl2fsKZd8COsRQ5lRQAKimVQVL0CZZVg==}
@@ -3029,8 +3029,8 @@ packages:
       react-dom:
         optional: true
 
-  framer-motion@12.0.6:
-    resolution: {integrity: sha512-LmrXbXF6Vv5WCNmb+O/zn891VPZrH7XbsZgRLBROw6kFiP+iTK49gxTv2Ur3F0Tbw6+sy9BVtSqnWfMUpH+6nA==}
+  framer-motion@12.3.0:
+    resolution: {integrity: sha512-pIL/fAMlj8J1Px+owKYfxtq1bpz9EOFt/GanUIwsWme2dS6w7WGviAaadhJxfhdpKa/DxR8pWZxDrgC6ujR26w==}
     peerDependencies:
       '@emotion/is-prop-valid': '*'
       react: ^18.0.0 || ^19.0.0
@@ -4103,13 +4103,13 @@ packages:
   motion-utils@12.0.0:
     resolution: {integrity: sha512-MNFiBKbbqnmvOjkPyOKgHUp3Q6oiokLkI1bEwm5QA28cxMZrv0CbbBGDNmhF6DIXsi1pCQBSs0dX8xjeER1tmA==}
 
-  motion-v@0.8.1:
-    resolution: {integrity: sha512-jgGnPD8Ra1OnmgjPN7DQzn0WtwSw7DQcYLSAGrZ2MtHex2EFydA1ZXlvC52oPvjvVT5F1Pws6u+EjbIZoYY3Zg==}
+  motion-v@0.9.0:
+    resolution: {integrity: sha512-Qi2G4bFTmt0MVI6xDVcuThfyDB/KejoXJ+/+lKx0hnEwi9nI9cg1aClo6j0djGDcAWvybUFUN3kEoWQw/lBh1A==}
     peerDependencies:
       vue: '>=3.0.0'
 
-  motion@12.0.6:
-    resolution: {integrity: sha512-AzCEO0+//mPlcGiL9JaVwjddHY1cbbnvz5upHL0toqQwsPCs+hiKJ0XG5jfG0XwDtBbiSXdEqW/UTmGLwkVQ6A==}
+  motion@12.3.0:
+    resolution: {integrity: sha512-VBSVLPw0++FxlCrzFYTkjwzWuXRK7bM4SWVxy0JqCGWr9wGasfce4D171W352UljOdL872H14sOXXqJA+2YioA==}
     peerDependencies:
       '@emotion/is-prop-valid': '*'
       react: ^18.0.0 || ^19.0.0
@@ -6696,7 +6696,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/simple-icons@1.2.22':
+  '@iconify-json/simple-icons@1.2.23':
     dependencies:
       '@iconify/types': 2.0.0
 
@@ -9964,7 +9964,7 @@ snapshots:
       motion-utils: 11.18.1
       tslib: 2.8.1
 
-  framer-motion@12.0.6:
+  framer-motion@12.3.0:
     dependencies:
       motion-dom: 12.0.0
       motion-utils: 12.0.0
@@ -11347,7 +11347,7 @@ snapshots:
 
   motion-utils@12.0.0: {}
 
-  motion-v@0.8.1(vue@3.5.13(typescript@5.7.3)):
+  motion-v@0.9.0(vue@3.5.13(typescript@5.7.3)):
     dependencies:
       '@vueuse/core': 10.11.1(vue@3.5.13(typescript@5.7.3))
       framer-motion: 11.16.6
@@ -11360,9 +11360,9 @@ snapshots:
       - react
       - react-dom
 
-  motion@12.0.6:
+  motion@12.3.0:
     dependencies:
-      framer-motion: 12.0.6
+      framer-motion: 12.3.0
       tslib: 2.8.1
 
   mrmime@2.0.0: {}
