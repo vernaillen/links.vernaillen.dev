@@ -1,9 +1,9 @@
-@import "tailwindcss";
+@import "tailwindcss" theme(static);
 @import "@nuxt/ui-pro";
 
 @plugin "@tailwindcss/typography";
 
-@theme {
+@theme static {
   --font-sans: 'Inter', sans-serif;
 
   --color-primary-50: var(--ui-color-primary-50);

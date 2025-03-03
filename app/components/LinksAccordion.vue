@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { animate } from 'motion/mini'
-import type { AccordionItem } from '@nuxt/ui/types'
+import type { AccordionItem } from '#ui/types'
 
 defineProps<{
   links: AccordionItem[]

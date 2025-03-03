@@ -1,8 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: 'wouter on the net: the links',
   meta: [
-    { name: 'description', content: 'Wouter Vernaillen: Ecstatic Dance DJ, Trance Dance facilitator, Freelance Java/JS Developer, Forever learning...' },
     {
       name: 'viewport',
       content: 'width=device-width, initial-scale=1.0'
@@ -17,12 +15,6 @@ useHead({
   htmlAttrs: {
     lang: 'en'
   }
-})
-
-useSeoMeta({
-  ogImage: 'https://links.vernaillen.dev/social-card.png',
-  twitterImage: 'https://links.vernaillen.dev/social-card.png',
-  twitterCard: 'summary_large_image'
 })
 
 if (import.meta.client) {

@@ -7,7 +7,10 @@ useSeoMeta({
   title: page.value.title,
   ogTitle: page.value.title,
   description: page.value.description,
-  ogDescription: page.value.description
+  ogDescription: page.value.description,
+  ogImage: 'https://links.vernaillen.dev/social-card.png',
+  twitterImage: 'https://links.vernaillen.dev/social-card.png',
+  twitterCard: 'summary_large_image'
 })
 definePageMeta({
   colorMode: 'dark'
